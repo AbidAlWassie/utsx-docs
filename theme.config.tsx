@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
+import { images } from "./src/data"
 
 const config: DocsThemeConfig = {
   logo: <span>utsx docs</span>,
@@ -22,6 +23,7 @@ const config: DocsThemeConfig = {
 
     return (
       <>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={frontMatter.title || 'utsx docs'} />
         <meta
@@ -30,6 +32,8 @@ const config: DocsThemeConfig = {
         />
         <title>{frontMatter.title || 'utsx docs'}</title>
         <meta name="description" content={frontMatter.description || 'Documentation for the utsx UI library'} />
+        {/* <link rel="shortcut icon" href="/favicon.ico" /> */}
+        <link rel="shortcut icon" href={`${images.icon}`} />
       </>
     )
   }

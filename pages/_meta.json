@@ -1,8 +1,8 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
   "accordion": "Accordion",
-  "advanced": "Advanced (A Folder)",
+  "card": "Card Components",
+  "advanced": "Advanced (Another Route)",
   "test": "Test Route",
   "about": {
     "title": "About",

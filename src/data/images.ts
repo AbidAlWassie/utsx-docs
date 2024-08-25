@@ -1,8 +1,5 @@
+import icon from '../assets/favicon.ico';
 import logo from '../assets/logo.png';
-import portrait_abid_md from '../assets/portrait_abid_md.png';
-import portrait_ragib_md from '../assets/portrait_ragib_md.png';
-import portrait_raiyan_md from '../assets/portrait_raiyan_md.png';
-import portrait_rashu_md from '../assets/portrait_rashu_md.png';
 
 import css from '../assets/icons/css.png';
 import fastapi from '../assets/icons/fastapi.png';
@@ -21,7 +18,6 @@ import tailwind from '../assets/icons/tailwind.png';
 import typescript from '../assets/icons/typescript.png';
 
 import logo_outlined from '../assets/icons/logo_outlined.svg';
-import logo_3d_md from '../assets/logo_3d_md.png';
 
 import project_1 from '../assets/gallery/project-1.jpg';
 import project_2 from '../assets/gallery/project-2.jpg';
@@ -37,10 +33,7 @@ import project_4 from '../assets/gallery/project-4.jpg';
 
 
 const data = {
-  portrait_abid_md,
-  portrait_ragib_md,
-  portrait_rashu_md,
-  portrait_raiyan_md,
+  icon: icon.src,
   logo,
   react,
   nextjs,
@@ -58,7 +51,6 @@ const data = {
   prisma,
   react_native,
   logo_outlined,
-  logo_3d_md,
   project_1,
   project_2,
   project_3,
