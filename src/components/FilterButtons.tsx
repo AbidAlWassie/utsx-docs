@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
-const FilterButtons = ({ filter, setFilter }) => {
+export const FilterButtons = ({ filter, setFilter }) => {
   const buttons = [
     { label: 'All', value: 'all' },
     { label: 'Front end', value: 'frontend' },
