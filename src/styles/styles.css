@@ -1,0 +1,34 @@
+/* Define the custom colors as CSS variables */
+:root {
+  --highlight: #59e1ff;
+  --txtdark: #dcf0f1;
+  --cyan: #50f7cf;
+  --cyanblue: #00eeff;
+  --cyanblue2: #0ecfdd;
+  --cyangreen: #23f8c5;
+  --cyangreen1: #13d8aa;
+  --cyangreen3: #07c296;
+  --cyanmid: #01c3cf;
+  --cyanmid2: #00a5ad;
+  --cyanmid3: #009097;
+  --cyandark: #00eeff;
+  --cyandark2: #144162;
+  --cyandark3: #008c9e;
+  --bgdark: #071115;
+  --bglight: #0b1b22;
+}
+
+* {
+  margin: 0;
+  /* cursor: default; */
+}
+
+button.active {
+  background: linear-gradient(
+    to left,
+    var(--cyandark2) -30%,
+    var(--cyangreen) 140%
+  );
+  transition: background 0.3s ease-in-out;
+  border-radius: 2rem;
+}

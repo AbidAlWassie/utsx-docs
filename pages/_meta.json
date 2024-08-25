@@ -1,7 +1,9 @@
 {
   "index": "Introduction",
   "another": "Another Page",
+  "accordion": "Accordion",
   "advanced": "Advanced (A Folder)",
+  "test": "Test Route",
   "about": {
     "title": "About",
     "type": "page"
