@@ -54,4 +54,3 @@ export const FilterButtons = ({ filter, setFilter }) => {
   );
 };
 
-export default FilterButtons;

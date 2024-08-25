@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const Cards = ({ project }) => {
+export const Cards = ({ project }) => {
   return (
     <motion.div
       className="prt-card bg-white rounded-lg shadow-lg overflow-hidden"
@@ -34,4 +34,3 @@ const Cards = ({ project }) => {
   );
 };
 
-export default Cards;

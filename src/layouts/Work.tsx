@@ -2,8 +2,7 @@
 
 import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import Cards from '../components/Cards';
-import FilterButtons from '../components/FilterButtons';
+import { Cards, FilterButtons } from '../components/';
 import { images } from "../data";
 
 export const Work = () => {
