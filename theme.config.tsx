@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
 import { images } from "./src/data"
 
@@ -15,16 +14,10 @@ const config: DocsThemeConfig = {
     text: 'utsx ui library',
   },
   head: () => {
-    const { asPath, defaultLocale, locale } = useRouter()
     const { frontMatter } = useConfig()
-    const url =
-      'https://my-app.com' +
-      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
-
     return (
       <>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:url" content={url} />
         <meta property="og:title" content={frontMatter.title || 'utsx docs'} />
         <meta
           property="og:description"
