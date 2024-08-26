@@ -3,6 +3,7 @@
   "accordion": "Accordion",
   "card": "Card",
   "navbar": "Navbar",
+  "dropzone": "Dropzone",
   "advanced": "Advanced (Another Route)",
   "test": "Test Route",
   "about": {
