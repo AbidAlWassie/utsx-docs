@@ -1,12 +1,75 @@
-## Live Demo
+import { IoMdImages } from "react-icons/io";
 import { Dropzone } from './../src/components';
 
+## Dropzone Component
+This you'll get this default dropzone if you don't pass any props.
+
 <Dropzone />
 
-
-## Card Component
 ```js filename="demo.js" {3} copy
-<Dropzone />
+import { Dropzone } from './../src/components';
+
+export const YourPage = () => {
+  return (
+    <Dropzone />
+  );
+};
+
+```
+
+
+## Make your own Custom Component
+
+This is an example of custom dropzone component.
+
+export const DropzoneDemo = () => {
+  const handleFileChange = (files) => {
+    console.log(files);
+  };
+
+  return (
+    <Dropzone
+      icon={<IoMdImages className="w-12 h-12" />}
+      headingText="Upload your images"
+      descriptionText="or drag them here"
+      subDescriptionText="JPG, PNG, GIF"
+      maxSizeText="(Max 5MB)"
+      accept="image/jpeg,image/png,image/gif"
+      onFileChange={handleFileChange}
+    />
+  );
+};
+
+<DropzoneDemo />
+
+
+
+
+## Custom Dropdown Code Component
+
+
+```js filename="custom.js" {5, 10} copy
+import { IoMdImages } from "react-icons/io";
+import { Dropzone } from './../src/components';
+
+export const DropzoneDemo = () => {
+  const handleFileChange = (files) => {
+    console.log(files);
+  };
+
+  return (
+    // Change the props as want
+    <Dropzone
+      icon={<IoMdImages className="w-12 h-12" />}
+      headingText="Upload your images"
+      descriptionText="or drag them here"
+      subDescriptionText="JPG, PNG, GIF"
+      maxSizeText="(Max 5MB)"
+      accept="image/jpeg,image/png,image/gif"
+      onFileChange={handleFileChange}
+    />
+  );
+};
 ```
 
 
