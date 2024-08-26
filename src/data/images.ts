@@ -34,7 +34,7 @@ import project_4 from '../assets/gallery/project-4.jpg';
 
 const data = {
   icon: icon.src,
-  logo,
+  logo: logo.src,
   react,
   nextjs,
   typescript,
