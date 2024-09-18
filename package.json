@@ -20,7 +20,7 @@
   "dependencies": {
     "eslint-config-next": "^14.2.6",
     "framer-motion": "^11.3.30",
-    "next": "^14.2.6",
+    "next": "^14.2.12",
     "nextra": "^2.13.4",
     "nextra-theme-docs": "latest",
     "react": "^18.3.1",
